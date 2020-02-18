@@ -32,4 +32,14 @@ function fibonacci(num) {
   return fibonacci(num - 1) + fibonacci(num - 2);
 }
 
-module.exports = {Xsquere, _Xsquere, __Xsquere, fibonacci};
+function _filterAgeOver24(_x){
+  return _x.filter(x => x.age > 24);
+}
+
+module.exports = {
+  Xsquere, 
+  _Xsquere, 
+  __Xsquere, 
+  fibonacci,
+  _filterAgeOver24
+};
